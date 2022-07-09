@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title="tip">
+</head>
+	<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+	input[type=text]{
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+	input[type=button]{
+	  width: 100%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+	button {
+	  background-color: #04AA6D;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	}
+	button:hover {
+	  opacity: 0.8;
+	}
+.container {
+  padding: 16px;
+}
+.container22 {
+	width: 100%;
+  padding: 3px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: none;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal-contentn2 {
+  background-color:transparent;
+  margin: 0% auto 0% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: none;
+  width: 45%; /* Could be more or less, depending on screen size */
+}
+	.button7 {
+	  border: none;
+	  color: white;
+	  padding: 8px 52px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 2px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+	}
+	.button7 {
+	  background-color: white;
+	  color: black;
+	  border: 2px solid #008CBA;
+	}
+	.button7:hover {
+	  background-color: #008CBA;/*green = 4CAF50 ; blue = 008CBA*/
+	  color: white;
+	}
+	.dropbtn {
+	  background-color: #04AA6D;
+	  color: white;
+		width: 100%;
+	  padding: 16px 68px;;
+	  font-size: 16px;
+	  border: none;
+	}
+	.dropdown {
+		width: 100%;
+	  position: relative;
+	  display: inline-block;
+	}
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+		width: 100%;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+	.dropdown-content a:hover {background-color: #ddd;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+	</style>
+	<center>
+	<h2>تحويل الوحدات</h2>
+	<body>
+<input type="text" id="J002">
+		<form class="modal-content">
+		    <div class="container">
+
+					<div class="dropdown">
+				  <input type="button" class="dropbtn" id="M001" value="unite">
+				  <div class="dropdown-content" id="MX01">
+				    <div><button class="button button7" id="M002" onclick="ab('+')" value="M002"> m1 </button></div>
+				    <div><button class="button button7" id="M002" onclick="ab('+')" value="M003"> m2 </button></div>
+				    <div><button class="button button7" id="M002" onclick="ab('+')" value="M004"> m3 </button></div>
+				  </div>
+				</div>
+
+				<div style="display: flex; justify-content: space-around" id="D001">
+
+							<!--3-->
+
+						<div class="modal-contentn2" style="display:absolute;">
+							    <div class="container22">
+						      <div class="dropdown">
+						      <button class="dropbtn">E = </button>
+						      <div class="dropdown-content">
+						        <div><button class="button button7">1</button></div>
+						        <div><button class="button button7">2</button></div>
+						        <div><button class="button button7">3</button></div>
+						      </div>
+						    </div>
+								</div>
+						  </div>
+
+
+
+						<div class="modal-contentn2" style="display:absolute;">
+						    <div class="container22">
+						      <div class="dropdown">
+						      <button class="dropbtn">E = </button>
+						      <div class="dropdown-content">
+						        <div><button class="button button7">1</button></div>
+						        <div><button class="button button7">2</button></div>
+						        <div><button class="button button7">3</button></div>
+						      </div>
+						    </div>
+						    </div>
+						  </div>
+
+					<!--3-->
+
+				</div>
+
+
+
+				<div class="forn" style="display: flex; justify-content: space-around">
+					<div><input type="text" id="outtx1"></div>
+					<div><input type="text" id="outtx2"></div>
+				</div>
+
+
+				</div>
+		  </form>
+
+	</body>
+	<script>
+
+	function ab(bb){
+		var M=document.getElementById('M002').value;
+		var K="king";
+		var A="king2";
+		var K="king3";
+		switch (bb) {
+			case '+':{
+			D=K;
+		}
+		break;
+	default:
+}
+		document.getElementById('J002').value=D
+	}
+	</script>
+</html>
+
+<!--
+	function drp(bb){
+		var on = document.getElementById('drp')
+		var off = document.getElementById('B1')
+		var on1 = document.getElementById('B2')
+		switch (bb) {
+			case '=':{
+				on.style.display = "block";
+				on1.style.display = "block";
+				off.style.display = "none";
+			}
+				break;
+			default:
+		}
+	}
+	function drk(bb){
+		var on = document.getElementById('drp')
+		var off = document.getElementById('B1')
+		var on1 = document.getElementById('B2')
+		switch (bb) {
+			case '=':{
+				on.style.display = "none";
+				on1.style.display = "none";
+				off.style.display = "block";
+			}
+				break;
+			default:
+		}
+	}-->
